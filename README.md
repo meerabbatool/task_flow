@@ -1,25 +1,27 @@
 # Task Flow 📋
 
-A Flutter task management app designed to help users create, organize, and manage their daily tasks with a simple and user-friendly interface.
+Task Flow is a Flutter-based task management application designed to help users create, organize, and manage their daily tasks through a simple and user-friendly interface.
 
 ## ✨ Features
 
-* Create new tasks
-* Edit tasks
+* Create and add tasks
+* Edit existing tasks
 * Delete tasks
 * Mark tasks as completed
-* View and manage daily tasks
+* Organize and manage daily tasks
+* Store task data locally
 * Simple and user-friendly interface
 
 ## 🛠️ Technologies Used
 
-* Flutter
-* Dart
-* Material Design
+* **Flutter**
+* **Dart**
+* **Material Design**
+* **Shared Preferences** for local data storage
 
 ## 📋 Requirements
 
-Before running this project, make sure you have:
+Before running the project, make sure you have:
 
 * Flutter SDK installed
 * Dart SDK
@@ -27,33 +29,51 @@ Before running this project, make sure you have:
 * Android SDK
 * Android device or emulator
 
-## 🔢 Flutter Version
+## 🔢 Flutter & Dart Version
 
-This project was developed using:
+### Flutter
 
 ```text
 Flutter 3.41.6
 ```
 
-Check your Flutter version with:
+### Dart
 
-```bash
-flutter --version
+```text
+Dart 3.11.4
 ```
 
 ## 📦 Packages Used
 
-The project uses the packages listed in `pubspec.yaml`.
+The following packages are used in this project:
 
-Install all dependencies using:
+### Dependencies
 
-```bash
-flutter pub get
+**Cupertino Icons**
+
+```text
+cupertino_icons: ^1.0.8
 ```
 
-Main package used:
+Provides iOS-style icons for the Flutter application.
 
-* `shared_preferences` – used for storing task data locally on the device.
+**Shared Preferences**
+
+```text
+shared_preferences: ^2.3.0
+```
+
+Used to store task data locally on the user's device.
+
+### Development Dependency
+
+**Flutter Lints**
+
+```text
+flutter_lints: ^6.0.0
+```
+
+Used to apply recommended Flutter and Dart coding practices.
 
 ## 🚀 Setup & Installation
 
@@ -71,39 +91,59 @@ cd task_flow
 
 ### 3. Install dependencies
 
+Run:
+
 ```bash
 flutter pub get
 ```
 
 ### 4. Run the application
 
-Connect an Android device or start an Android emulator and run:
+Connect an Android device or start an Android emulator, then run:
 
 ```bash
 flutter run
 ```
 
-## 📱 Build APK
+## 📱 Build Installable APK
 
-To create an installable Android APK:
+To create a release APK, run:
 
 ```bash
 flutter build apk --release
 ```
 
-The generated APK can be found at:
+The generated APK will be available at:
 
 ```text
 build/app/outputs/flutter-apk/app-release.apk
 ```
 
+## 📁 Project Structure
+
+```text
+task_flow/
+├── android/
+├── assets/
+│   └── images/
+│       └── logo.png
+├── lib/
+├── test/
+├── pubspec.yaml
+└── README.md
+```
+
 ## ⚠️ Known Limitations
 
-* The application currently focuses on basic task management.
 * Task data is stored locally on the device.
-* Tasks are not synchronized between multiple devices.
-* There is currently no cloud-based account synchronization.
-* The application is primarily designed and tested for Android.
+* Tasks are not synchronized across multiple devices.
+* The application does not currently include cloud-based data synchronization.
+* The current version is primarily designed and tested for Android.
+* Data stored locally may be lost if the application's local data is cleared or the application is uninstalled.
+
+## 📄 License
+
+This project is not published to pub.dev and is intended for educational and project purposes.
 
 ## 👩‍💻 Developer
 
